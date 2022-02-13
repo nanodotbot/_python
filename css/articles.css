@@ -1,0 +1,46 @@
+section,
+article {
+    max-width: 600px;
+}
+
+section {
+    margin: 0 auto;
+}
+
+article {
+    padding: 0 0rem 2rem 0rem;
+    border-bottom: var(--border);
+    margin: 2rem auto 0 auto;
+    
+    /* background-color: var(--background-1); */
+}
+article:last-child {
+    border-bottom: none;
+}
+
+main h1,
+main p,
+main a,
+code,
+pre {
+    margin-top: 1rem;
+}
+
+figure {
+    text-align: center;
+}
+
+figure > img {
+    text-align: center;
+    max-width: 35rem;
+}
+figure > figcaption {
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    section,
+    article {
+        max-width: 95vw;
+    }
+}

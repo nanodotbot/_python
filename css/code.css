@@ -1,0 +1,28 @@
+code {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1rem;
+    text-align: center;
+    /* background-color: var(--gray-0); */
+
+    padding: 1rem 0;
+}
+code > span {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1rem;
+    color: var(--primary-analogues-0);
+}
+code > span.sec {
+    color: var(--secondary-analogues-0);
+}
+code > span.thi {
+    color: var(--secondary-0);
+}
+code > span.fou {
+    color: var(--yellow-0);
+}
+code > span.fif {
+    color: var(--purple-0);
+}
+code > span.com {
+    color: var(--gray-7);
+}

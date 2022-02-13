@@ -1,0 +1,392 @@
+:root {
+    font-size: 12px;
+
+    --teal-l-9: #f3f8f8;
+    --teal-l-8: #e7f2f2;
+    --teal-l-7: #dcebec;
+    --teal-l-6: #d0e5e5;
+    --teal-l-5: #c5dfdf;
+    --teal-l-4: #b9d8d9;
+    --teal-l-3: #add2d2;
+    --teal-l-2: #a2cbcc;
+    --teal-l-1: #96c5c6;
+    --teal-0: #8bbfc0;
+    --teal-d-1: #7dabac;
+    --teal-d-2: #6f9899;
+    --teal-d-3: #618586;
+    --teal-d-4: #537273;
+    --teal-d-5: #455f60;
+    --teal-d-6: #374c4c;
+    --teal-d-7: #293939;
+    --teal-d-8: #1b2626;
+    --teal-d-9: #0d1313;
+
+    --salmon-l-9: #f8f3f3;
+    --salmon-l-8: #f2e8e7;
+    --salmon-l-7: #ecdcdc;
+    --salmon-l-6: #e5d1d0;
+    --salmon-l-5: #dfc5c5;
+    --salmon-l-4: #d9bab9;
+    --salmon-l-3: #d2aead;
+    --salmon-l-2: #cca3a2;
+    --salmon-l-1: #c69796;
+    --salmon-0: #c08c8b;
+    --salmon-d-1: #ac7e7d;
+    --salmon-d-2: #99706f;
+    --salmon-d-3: #866261;
+    --salmon-d-4: #735453;
+    --salmon-d-5: #604645;
+    --salmon-d-6: #4c3837;
+    --salmon-d-7: #392a29;
+    --salmon-d-8: #261c1b;
+    --salmon-d-9: #130e0d;
+
+    --green-l-9: #f3f8f6;
+    --green-l-8: #e7f2ed;
+    --green-l-7: #dcece4;
+    --green-l-6: #d0e5db;
+    --green-l-5: #c5dfd3;
+    --green-l-4: #b9d9ca;
+    --green-l-3: #add2c1;
+    --green-l-2: #a2ccb8;
+    --green-l-1: #96c6af;
+    --green-0: #8bc0a7;
+    --green-d-1: #7dac96;
+    --green-d-2: #6f9985;
+    --green-d-3: #618674;
+    --green-d-4: #537364;
+    --green-d-5: #456053;
+    --green-d-6: #374c42;
+    --green-d-7: #293932;
+    --green-d-8: #1b2621;
+    --green-d-9: #0d1310;
+
+    --lila-l-9: #f8f3f5;
+    --lila-l-8: #f2e7ec;
+    --lila-l-7: #ecdce3;
+    --lila-l-6: #e5d0da;
+    --lila-l-5: #dfc5d1;
+    --lila-l-4: #d9b9c8;
+    --lila-l-3: #d2adbf;
+    --lila-l-2: #cca2b6;
+    --lila-l-1: #c696ad;
+    --lila-0: #c08ba4;
+    --lila-d-1: #ac7d93;
+    --lila-d-2: #996f83;
+    --lila-d-3: #866172;
+    --lila-d-4: #735362;
+    --lila-d-5: #604552;
+    --lila-d-6: #4c3741;
+    --lila-d-7: #392931;
+    --lila-d-8: #261b20;
+    --lila-d-9: #130d10;
+
+    --black: black;
+
+    --gray-0: #121212;
+    --gray-1: #292929;
+    --gray-2: #414141;
+    --gray-3: #595959;
+    --gray-4: #707070;
+    --gray-5: #888888;
+    --gray-6: #A0A0A0;
+    --gray-7: #B7B7B7;
+    --gray-8: #CFCFCF;
+    --gray-9: #E7E7E7;
+    --gray-10: #FFFFFF;
+
+    --dark-gray-1: #343434;
+    --dark-gray-2: #2F2F2F;
+    --dark-gray-3: #2A2A2A;
+    --dark-gray-4: #242424;
+    --dark-gray-5: #1F1F1F;
+    --dark-gray-6: #1A1A1A;
+    --dark-gray-7: #151515;
+    --dark-gray-8: #101010;
+    --dark-gray-9: #0A0A0A;
+    --dark-gray-10: #050505;
+
+    --yellow-0: #FFC30B;
+    --yellow-d-1: #F6BA00;
+
+    --purple-0: #a93c9f;
+
+    --ghost: var(--teal-l-8);
+
+    --primary-l-3: var(--teal-l-3);
+    --primary-l-2: var(--teal-l-2);
+    --primary-d-1: var(--teal-d-1);
+
+    --primary-0: var(--teal-0);
+
+    --secondary-l-2: var(--salmon-l-2);
+
+    --secondary-0: var(--lila-0);
+
+    --primary-analogues-0: var(--green-0);
+
+    --secondary-analogues-0: var(--salmon-0);
+
+    --background-1: var(--dark-gray-7);
+    --background-2: var(--dark-gray-6);
+    --background-3: var(--dark-gray-5);
+
+    --text: var(--ghost);
+    --link: var(--primary-0);
+    --link-2: var(--secondary-0);
+    --link-secondary: var(--primary-l-2);
+    --link-2-secondary: var(--secondary-analogues-0);
+    
+    --button: var(--teal-d-3);
+    --button-secondary: var(--primary-0);    
+
+    --header-1: var(--gray-9);
+    --header-2: var(--gray-9);
+    --header-3: var(--gray-9);
+    --header-4: var(--gray-9);
+
+    --sub-header-0: var(--secondary-analogues-0);
+
+    --border: .05rem solid var(--gray-3);
+
+    --transition-fast: all .2s ease;
+    --transition-slow: all .8s ease;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--gray-2);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-0);
+}
+
+::-moz-selection {
+    background: var(--background-1);
+    color: var(--teal-l-2);
+}
+::selection {
+    background: var(--background-1);
+    color: var(--teal-l-2);
+}
+
+html,
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+    font-family: 'Karla', 'Mulish', 'Open Sans', 'Calibri Light', Calibri, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    letter-spacing: .1rem;
+
+    color: var(--text);
+}
+
+body {
+    background-color: var(--background-1);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--header-1);
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: var(--header-2);
+}
+
+h3 {
+    font-size: 1.6rem;
+    color: var(--header-3);
+}
+
+h4 {
+    font-size: 1.2rem;
+    color: var(--header-4);
+}
+
+a {
+    font-style: normal;
+    text-decoration: none;
+
+    transition: var(--transition-slow);
+
+    color: var(--link);
+
+    cursor: context-menu;
+}
+
+a:hover {
+    color: var(--link-secondary);
+}
+
+h2 > a {
+    font-size: 1.8rem;
+}
+
+h4 > a {
+    font-size: 1.2rem;
+    /* color: var(--link-2); */
+}
+
+/* h4 > a:hover {
+    color: var(--link-2-secondary);
+} */
+
+form {
+    width: 20rem;
+
+    max-width: 100%;
+    max-height: 90vh;
+
+    margin: 0 auto 1rem auto;
+}
+
+input {
+    height: 3rem;
+    min-height: 3rem;
+
+}
+
+input,
+textarea {
+    display: block;
+}
+
+textarea {
+    resize: none;
+	overflow: hidden; /* prevents scroll bar flash */
+}
+
+input,
+textarea {
+    width: 20rem;
+
+    padding: 0.3rem 0.3rem;
+    margin-top: .1rem;
+    margin-bottom: 3rem;
+
+    background-color: var(--background-1);
+
+    border: none;
+    border-bottom: 0.1rem solid var(--link);
+
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+
+    transition: var(--transition-slow);
+
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border: none;
+    border-bottom: 0.1rem solid var(--link-secondary);
+
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+
+    /* transition: color 1s, border-color 1s; */
+    transition: var(--transition-slow);
+}
+
+label {
+    display: block;
+    font-size: .8rem;
+
+    color: var(--link-neg);
+}
+
+/* doesn't work anymore 
+input:focus + label,
+textarea:focus + label {
+    color: var(--link-secondary);
+
+    transition: var(--transition-slow);
+}
+*/
+
+button {
+    width: 20rem;
+
+    padding: .7rem 2rem;
+    
+    border: none;
+    outline: none;
+    border-radius: .2rem;
+
+    margin: 0 auto 2rem auto;
+
+    background-color: var(--button);
+    color: var(--text);
+}
+
+button:hover {
+    background-color: var(--link-secondary);
+
+    transition: var(--transition-slow);
+}
+
+img, video {
+    display: block;
+    max-width: 100%;
+    max-height: 90vh;
+
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body > header {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    /* background-color: var(--background-2); */
+
+    padding: 1rem;
+    border-bottom: var(--border);
+}
+
+body > footer {
+    text-align: center;
+    /* background-color: var(--background-2); */
+
+    padding: 1rem;
+    border-top: var(--border);
+    margin-top: 1rem;
+}
+
+footer > a {
+    font-size: 1rem;
+    color: var(--primary-0);
+
+    padding-top: .5rem;
+}
+
+@media screen and (max-width: 500px) {
+    #file-input-label {
+        left: 12rem;
+    }
+}
