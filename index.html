@@ -36,6 +36,14 @@
             </article>
             <article>
                 <h2>calculations</h2>
+                <pre><code><span class="com"># Python converts all ints 
+to floats before performing 
+division. In older versions of 
+Python (2.7 and earlier) this 
+conversion did not happen, and 
+integer division would always 
+round down to the nearest 
+integer</span></code></pre>
                 <pre><code><span class="sec">num1</span> = <span class="sec">13</span></code></pre>
                 <pre><code><span class="sec">num2</span> = <span class="sec">37</span></code></pre>
                 <pre><code><span class="sec">num3</span> = <span class="sec">42</span></code></pre>
@@ -49,8 +57,109 @@
                 <pre><code><span class="sec">string1</span> = <span class="fou">'algernon is'</span></code></pre>
                 <pre><code><span class="sec">string2</span> = <span class="fou">'doing well'</span></code></pre>
                 <pre><code><span class="sec">a_number</span> = <span class="sec">42</span></code></pre>
-                <pre><code><span class="sec">string3</span> = <span class="sec">string1</span> + <span class="fou">" "</span> + <span class="sec">string2</span> + <span class="fou">" ("</span> + str(<span class="sec">a_number</span>) + <span class="fou">")"</span></code></pre>
+                <pre><code><span class="sec">string3</span> = <span class="sec">string1</span> + <span class="fou">' '</span> + <span class="sec">string2</span> + <span class="fou">' ('</span> + str(<span class="sec">a_number</span>) + <span class="fou">')'</span></code></pre>
                 <pre><code>print(<span class="sec">string3</span>)</code></pre>
+            </article>
+            <article>
+                <h2>plus equals</h2>
+                <pre><code><span class="sec">string</span> = <span class="fou">''</span></code></pre>
+                <pre><code><span class="sec">string1</span> = <span class="fou">'algernon is'</span></code></pre>
+                <pre><code><span class="sec">string2</span> = <span class="fou">'doing well'</span></code></pre>
+                <pre><code><span class="sec">a_number</span> = <span class="sec">42</span></code></pre>
+                <pre><code><span class="sec">another_number</span> = <span class="sec">13.37</span></code></pre>
+                <pre><code><span class="sec">string</span> += <span class="sec">string1</span></code></pre>
+                <pre><code><span class="sec">string</span> += <span class="fou">' '</span></code></pre>
+                <pre><code><span class="sec">string</span> += <span class="sec">string2</span></code></pre>
+                <pre><code><span class="sec">a_number</span> += <span class="sec">another_number</span></code></pre>
+            </article>
+            <article>
+                <h2>multi-line strings</h2>
+                <pre><code><span class="sec">sonnet_130</span> = <span class="fou">'''
+My mistress’ eyes are nothing like the sun;
+Coral is far more red than her lips’ red;
+If snow be white, why then her breasts are dun;
+If hairs be wires, black wires grow on her head.
+I have seen roses damasked, red and white,
+But no such roses see I in her cheeks;
+And in some perfumes is there more delight
+Than in the breath that from my mistress reeks.
+I love to hear her speak, yet well I know
+That music hath a far more pleasing sound;
+I grant I never saw a goddess go;
+My mistress when she walks treads on the ground.
+And yet, by heaven, I think my love as rare
+As any she belied with false compare.
+'''</span>
+print(<span class="sec">sonnet_130</span>)</code></pre>
+            </article>
+            <article>
+                <h2>conditional statements</h2>
+                <pre><code><span class="sec">one</span> = <span class="sec">1</span>
+<span class="sec">two</span> = <span class="sec">2</span>
+<span class="sec">three</span> = <span class="sec">3</span>
+<span class="sec">four</span> = <span class="sec">4</span>
+<span class="thr">if</span> not (<span class="sec">one</span> <span class="sec">&lt;</span>= <span class="sec">two</span> <span class="thr">and</span> <span class="sec">four</span> <span class="sec">&gt;</span>= <span class="sec">three</span>) <span class="thr">or</span> <span class="sec">four</span> <span class="sec">&gt;</span>= <span class="sec">one</span> <span class="thr">or</span> <span class="sec">four</span> != <span class="sec">four</span>:
+    print(<span class="fou">'this will be printed'</span>)
+<span class="thr">elif</span> <span class="sec">two</span> > <span class="sec">one</span>:
+    print(<span class="fou">'this won</span>\'<span class="fou">t be printed'</span>)
+<span class="thr">else</span>:
+    print(<span class="fou">'this won</span>\'<span class="fou">t be printed either'</span>)</code></pre>
+            </article>
+            <article>
+                <h2>lists and list methods</h2>
+                <pre><code><span class="sec">list</span> = []
+<span class="sec">list</span>.<span class="fir">append</span>(<span class="sec">4</span>)
+<span class="sec">list</span>.<span class="fir">remove</span>(<span class="sec">4</span>)
+
+<span class="sec">rabbits</span> = [[<span class="fou">'floppy'</span>, <span class="fou">'miststück'</span>, <span class="sec">42</span>], [<span class="fou">'algernon'</span>, <span class="fou">'quietscheentchen'</span>, <span class="sec">42</span>], [<span class="fou">'fober'</span>, <span class="fou">'lovepriest'</span>, <span class="sec">42</span>]]
+<span class="sec">rabbits</span> += [[<span class="fou">'löffel'</span>, <span class="fou">'pedro'</span>]]
+<span class="sec">rabbits</span>[-1].<span class="fir">append</span>(<span class="sec">42</span>)
+print(<span class="sec">rabbits</span>)
+<span class="sec">lovepriests_rabbit</span> = <span class="sec">rabbits</span>[-2][0]
+print(<span class="sec">lovepriests_rabbit</span>)
+
+<span class="sec">rabbits</span>.<span class="fir">insert</span>(1, [<span class="fou">'spy'</span>, <span class="fou">'satan klaus'</span>, <span class="sec">0</span>])
+<span class="sec">rabbits</span>.<span class="fir">insert</span>(-1, [<span class="fou">'another spy'</span>, <span class="fou">'bill'</span>, <span class="sec">0</span>])
+print(<span class="sec">rabbits</span>[1])
+print(<span class="sec">rabbits</span>[-2])
+print(<span class="sec">rabbits</span>)
+<span class="sec">spy</span> = <span class="sec">rabbits</span>.<span class="fir">pop</span>(1)
+<span class="sec">another_spy</span> = <span class="sec">rabbits</span>.<span class="fir">pop</span>(-2)
+print(<span class="sec">rabbits</span>)
+print(<span class="fou">'got rid of: '</span>, <span class="sec">spy</span>, <span class="fou">' and '</span>,<span class="sec">another_spy</span>)
+<span class="sec">rabbits</span>.<span class="fir">insert</span>(4, [<span class="fou">'spy'</span>, <span class="fou">'satan klaus'</span>, <span class="sec">0</span>])
+<span class="sec">rabbits</span>.<span class="fir">pop</span>()
+print(<span class="sec">rabbits</span>)
+
+<span class="sec">zero_to_nine</span> = range(10)
+print(<span class="sec">zero_to_nine</span>)
+<span class="sec">zero_to_nine_list</span> = list(<span class="sec">zero_to_nine</span>)
+print(<span class="sec">zero_to_nine_list</span>)
+<span class="sec">two_to_nine</span> = list(range(2, 10))
+print(<span class="sec">two_to_nine</span>)
+<span class="sec">one_three_five_seven</span> = range(1, 8, 2)
+print(<span class="sec">one_three_five_seven</span>)
+
+print(len(<span class="sec">zero_to_nine</span>))
+print(len(<span class="sec">zero_to_nine_list</span>))
+
+<span class="sec">one_to_six</span> = <span class="sec">zero_to_nine_list</span>[1:7]
+print(<span class="sec">one_to_six</span>)
+<span class="sec">zero_to_three</span> = <span class="sec">zero_to_nine_list</span>[:4]
+<span class="sec">zero_to_eight</span> = <span class="sec">zero_to_nine_list</span>[:-1]
+<span class="sec">eight_to_nine</span> = <span class="sec">zero_to_nine_list</span>[-2:]
+
+<span class="sec">rabbit_names</span> = [<span class="fou">'algernon'</span>, <span class="fou">'floppy'</span>, <span class="fou">'fober'</span>, <span class="fou">'floppy'</span>, <span class="fou">'floppy'</span>]
+print(<span class="sec">rabbit_names</span>.<span class="fir">count</span>(<span class="fou">'floppy'</span>))
+
+<span class="sec">sorted_rabbit_names</span> = sorted(<span class="sec">rabbit_names</span>)
+print(<span class="sec">sorted_rabbit_names</span>)
+<span class="sec">rabbit_names</span>.<span class="fir">sort</span>()
+print(<span class="sec">rabbit_names</span>)
+<span class="sec">rabbit_names</span>.<span class="fir">sort</span>(reverse=<span class="six">True</span>)
+print(<span class="sec">rabbit_names</span>)
+
+</code></pre>
             </article>
         </section>
     </main>
