@@ -121,7 +121,7 @@ print(<span class="sec">sonnet_130</span>)</code></pre>
             </article>
             <article>
                 <h2>lists and list methods</h2>
-                <p><a href="https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-lists/cheatsheet" target="_blank" rel="noopener noreferrer">lists</a> | <a href="https://www.codecademy.com/resources/docs/python/lists" target="_blank" rel="noopener noreferrer">lists</a> | .count() | .insert() | .pop() | range() | len() | .sort() / sorted()</p>
+                <p><a href="https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-lists/cheatsheet" target="_blank" rel="noopener noreferrer">lists</a> | <a href="https://www.codecademy.com/resources/docs/python/lists" target="_blank" rel="noopener noreferrer">lists</a> | .count() | .insert() | .pop() | range() | len() | .sort() / sorted() | <a href="https://www.codecademy.com/courses/learn-python-3/articles/advanced-python-code-challenges-lists" target="_blank" rel="noopener noreferrer">lists code challenges</a></p>
                 <pre><code><span class="sec">list</span> = []
 <span class="sec">list</span>.<span class="fir">append</span>(<span class="sec">4</span>)
 <span class="sec">list</span>.<span class="fir">remove</span>(<span class="sec">4</span>)
@@ -193,10 +193,44 @@ one_element_tuple = (42,) #trailing comma, because every expression can be sourr
             </article>
             <article>
                 <h2>loops</h2>
-                <p><a href="https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-loops/cheatsheet" target="_blank" rel="noopener noreferrer">loops</a> | </p>
+                <p><a href="https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-loops/cheatsheet" target="_blank" rel="noopener noreferrer">loops</a> | <a href="https://www.codecademy.com/courses/learn-python-3/articles/python-code-challenges-loops" target="_blank" rel="noopener noreferrer">loops code challenges</a> | <a href="https://www.codecademy.com/courses/learn-python-3/articles/advanced-python-code-challenges-loops" target="_blank" rel="noopener noreferrer">loops code challenges advanced</a> | </p>
                 <pre><code>for rabbit in rabbits_list: print(rabbit)
+whatever = 'whatever'
+for string in range(5):
+    print(whatever + str(string + 1))
 
+countdown = 10
+while countdown > 0:
+    print(countdown)
+
+count = 0
+while count &lt;= 3: print(count); count += 1
+
+length = len(rabbit_names)
+index = 0
+while index &lt; length:
+    print(rabbit_names[index])
+    index += 1
+
+#finding floppy
+print('looking for floppy...')
+for rabbit in rabbit_names:
+    if rabbit == 'floppy':
+        print('found him!')
+        break
+print('end of search.')
+
+#print all but algernon
+for rabbit in rabbit_names:
+    if rabbit == 'algernon':
+        continue
+    print(rabbit)
+
+#nested loops
                 </code></pre>
+            </article>
+            <article>
+                <h2></h2>
             </article>
         </section>
     </main>

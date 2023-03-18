@@ -466,6 +466,18 @@ print(calculate_all_error(1, -1, datapoints))
 datapoints = [(1, 1), (3, 3), (5, 5), (-1, -1)]
 print(calculate_all_error(-1, 1, datapoints))
 
+print('here we are')
 
+#finding floppy
+rabbit_names = ['algernon', 'floppy', 'fober']
+print('looking for floppy...')
+for item in rabbit_names:
+    if item == 'floppy':
+        print('found him!')
+        break
+print('end of search.')
 
-
+for rabbit in rabbit_names:
+    if rabbit == 'algernon':
+        continue
+    print(rabbit)
