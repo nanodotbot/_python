@@ -20,9 +20,12 @@
     <main>
         <section>
             <h1>hello world</h1>
+            <p><a href="https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-hello-world/cheatsheet" target="_blank" rel="noopener noreferrer">cheatsheet</a> | <a href="https://www.codecademy.com/resources/docs/python" target="_blank" rel="noopener noreferrer">docs</a></p>
             <article>
                 <h2>comments</h2>
+                <p><a href="https://www.codecademy.com/resources/docs/python/comments" target="_blank" rel="noopener noreferrer">comments</a></p>
                 <pre><code><span class="com"># some hearts for the world</span></code></pre>
+                <pre><code><span class="com"># bunnies &lt;3</span></code></pre>
             </article>
             <article>
                 <h2>print</h2>
@@ -30,12 +33,18 @@
             </article>
             <article>
                 <h2>variables</h2>
+                <p><a href="https://www.codecademy.com/resources/docs/python/strings" target="_blank" rel="noopener noreferrer">strings</a></p>
                 <pre><code><span class="sec">string</span> = <span class="fou">'just a string'</span></code></pre>
                 <pre><code><span class="sec">an_integer</span> = <span class="sec">42</span></code></pre>
                 <pre><code><span class="sec">a_float</span> = <span class="sec">13.37</span></code></pre>
             </article>
             <article>
+                <h2>errors</h2>
+                <p><a href="https://www.codecademy.com/resources/docs/python/errors" target="_blank" rel="noopener noreferrer">errors</a></p>
+            </article>
+            <article>
                 <h2>calculations</h2>
+                <p><a href="https://www.codecademy.com/resources/docs/python/operators" target="_blank" rel="noopener noreferrer">operators</a> | <a href="https://docs.python.org/3/tutorial/floatingpoint.html" target="_blank" rel="noopener noreferrer">floating point</a> | <a href="https://www.codecademy.com/resources/docs/python/modulo" target="_blank" rel="noopener noreferrer">modulo</a></p>
                 <pre><code><span class="com"># Python converts all ints 
 to floats before performing 
 division. In older versions of 
@@ -93,7 +102,12 @@ As any she belied with false compare.
 print(<span class="sec">sonnet_130</span>)</code></pre>
             </article>
             <article>
+                <h2>input()</h2>
+                <pre><code>name = input('what is your name?')</code></pre>
+            </article>
+            <article>
                 <h2>conditional statements</h2>
+                <p><a href="https://www.codecademy.com/resources/docs/python/conditionals" target="_blank" rel="noopener noreferrer">conditionals</a> | <a href="https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-control-flow/cheatsheet" target="_blank" rel="noopener noreferrer">control flow</a> | <a href="https://www.codecademy.com/resources/docs/python/operators" target="_blank" rel="noopener noreferrer">operators</a> | True, False | type()</p>
                 <pre><code><span class="sec">one</span> = <span class="sec">1</span>
 <span class="sec">two</span> = <span class="sec">2</span>
 <span class="sec">three</span> = <span class="sec">3</span>
@@ -107,6 +121,7 @@ print(<span class="sec">sonnet_130</span>)</code></pre>
             </article>
             <article>
                 <h2>lists and list methods</h2>
+                <p><a href="https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-lists/cheatsheet" target="_blank" rel="noopener noreferrer">lists</a> | <a href="https://www.codecademy.com/resources/docs/python/lists" target="_blank" rel="noopener noreferrer">lists</a> | .count() | .insert() | .pop() | range() | len() | .sort() / sorted()</p>
                 <pre><code><span class="sec">list</span> = []
 <span class="sec">list</span>.<span class="fir">append</span>(<span class="sec">4</span>)
 <span class="sec">list</span>.<span class="fir">remove</span>(<span class="sec">4</span>)
@@ -159,7 +174,29 @@ print(<span class="sec">rabbit_names</span>)
 <span class="sec">rabbit_names</span>.<span class="fir">sort</span>(reverse=<span class="six">True</span>)
 print(<span class="sec">rabbit_names</span>)
 
+rabbit_names = ['algernon', 'floppy', 'fober']
+rabbit_ages = [42, 42, 42]
+names_and_ages = zip(rabbit_names, rabbit_ages)
+print(names_and_ages)
+converted_list = list(names_and_ages)
+print(converted_list)
 </code></pre>
+            </article>
+            <article>
+                <h2>tuples</h2>
+                <p>immutable | <a href="https://www.codecademy.com/courses/learn-python-3/videos/learn-python3-tuples" target="_blank" rel="noopener noreferrer">tuples</a></p>
+                <pre><code>my_tuple = ('Aisle Nevertell', 42, 'Meditation')
+name, age, hobby = my_tuple
+
+one_element_tuple = (42,) #trailing comma, because every expression can be sourrounded by parantheses
+                </code></pre>
+            </article>
+            <article>
+                <h2>loops</h2>
+                <p><a href="https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-loops/cheatsheet" target="_blank" rel="noopener noreferrer">loops</a> | </p>
+                <pre><code>for rabbit in rabbits_list: print(rabbit)
+
+                </code></pre>
             </article>
         </section>
     </main>
