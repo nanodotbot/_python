@@ -481,3 +481,17 @@ for rabbit in rabbit_names:
     if rabbit == 'algernon':
         continue
     print(rabbit)
+
+# functions
+
+rabbit1, rabbit2, rabbit3 = rabbit_names
+
+def greet_rabbits(rabbit1, rabbit2, rabbit3):
+    greeting1 = 'hello ' + rabbit1
+    greeting2 = 'hi ' + rabbit2
+    greeting3 = 'meow ' + rabbit3
+    return greeting1, greeting2, greeting3
+
+greeting1, greeting2, greeting3 = greet_rabbits(rabbit1, rabbit2, rabbit3)
+
+print(greeting1, greeting2, greeting3)
